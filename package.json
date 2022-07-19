@@ -1,5 +1,22 @@
 {
   "dependencies": {
     "discord.js": "^14.0.2"
-  }
+  },
+  "name": "defi-bot",
+  "version": "1.0.0",
+  "description": "A Beep Boop for the DeFi Discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierSanzSaez/DeFi-Bot.git"
+  },
+  "author": "Javier Sanz Sáez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavierSanzSaez/DeFi-Bot/issues"
+  },
+  "homepage": "https://github.com/JavierSanzSaez/DeFi-Bot#readme"
 }
