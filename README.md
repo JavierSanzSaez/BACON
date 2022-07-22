@@ -15,6 +15,31 @@ Fortunately all my dependencies are stored in [the package.json file](package.js
 npm install
 ```
 
+# Usage
+In order to run this bot, you will need a package.json file with the following configuration (Please refer to the [Discord documentation](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot) in order to set up your bot):
+
+```json
+{
+    "token": "Private Bot token",
+    "guildId": "",
+    "clientId": ""
+}
+
+```
+
+With this in the directory, just execute this command:
+
+```bash
+npm start
+```
+
+The bot commands are stored in the commands folder. Once you add new commands, you can easily register them with the following command:
+
+```bash
+npm run register
+
+```
+
 
 # Suggestions? More ideas with bacon?
 Feel free to contact me or drop an issue if you come up with anything else you can do with bacon! :D
