@@ -1,6 +1,8 @@
 # BACON - A Beep Boop Beep for DeFi :bacon:
 BACON is a Discord Bot designed to fulfill all my needs regarding Crypto and DeFi. This is mainly a project for fun, while at the same time it helps me keep an eye on Defi stats, such as coin prices.
 
+(No, it has nothing to do with the abominable functional transformation [baconjs](https://baconjs.github.io/))
+
 # Installation
 This project is based on the JS discord.js module, so you will need the basics:
 
