@@ -1,9 +1,9 @@
 const { Client, Intents, Collection } = require('discord.js');
-const { token } = require('./config.json');
+const { token, clientId } = require('./config.json');
 const fs = require('node:fs')
 const path = require('node:path')
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 client.commands = new Collection();
 
@@ -21,6 +21,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log('Ready!');
+    client.user.setActivity("Beep booping");
 });
 
 client.on('interactionCreate', async interaction => {
@@ -37,5 +38,11 @@ client.on('interactionCreate', async interaction => {
 		await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 	}
 });
+
+client.on('messageCreate', message =>{
+    if (message.content=="It is known" && message.author.id!=clientId){
+        message.reply('It is known')
+    }
+})
 
 client.login(token);
