@@ -1,3 +1,5 @@
+![BACON version 1.0](https://img.shields.io/badge/Bacon-1.0-red)
+
 # BACON - A Beep Boop Beep for DeFi :bacon:
 BACON is a Discord Bot designed to fulfill all my needs regarding Crypto and DeFi. This is mainly a project for fun, while at the same time it helps me keep an eye on Defi stats, such as coin prices.
 
