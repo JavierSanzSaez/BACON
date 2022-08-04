@@ -8,7 +8,7 @@ module.exports = {
         .setName('givemethebacon')
         .setDescription('Give me the Bacon!'),
 
-    async execute(interaction) {
+    async execute({interaction}) {
         url = "Whoops :( I couldn't get Bacon"
         rnd = Math.floor(Math.random()*50)
         axios({

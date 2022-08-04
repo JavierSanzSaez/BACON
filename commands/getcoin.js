@@ -12,7 +12,7 @@ module.exports = {
 				.setRequired(true)
 		),
         
-	async execute(interaction) {
+	async execute({interaction}) {
         response = await axios.get(`https://api.coingecko.com/api/v3/coins/${interaction.options.getString('coin')}`)
 
         await interaction.reply(`${response.data.name} price is currently at ${response.data.market_data.current_price.usd} dollers!`);

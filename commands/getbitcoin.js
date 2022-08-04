@@ -6,7 +6,7 @@ module.exports = {
 		.setName('getbitcoin')
 		.setDescription('Bitcoin price query goes brrrr'),
         
-	async execute(interaction) {
+	async execute({interaction}) {
 
         response = await axios.get('https://api.coingecko.com/api/v3/coins/bitcoin')
 
