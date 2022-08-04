@@ -42,6 +42,12 @@ npm run register
 
 ```
 
+If you are a die-hard fan of whales, so can also run the dockerized application
+
+```bash
+docker build -t bacon .
+docker run bacon
+```
 
 # Suggestions? More ideas with bacon?
 Feel free to contact me or drop an issue if you come up with anything else you can do with bacon! :D
