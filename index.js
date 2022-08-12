@@ -22,6 +22,7 @@ for (const file of commandFiles) {
 client.once('ready', () => {
 	console.log('Ready!');
     client.user.setActivity("Beep booping");
+	client.channels.cache.get('960431284742668300').send("Who's ready for some BACON?!?")
 });
 
 client.on('interactionCreate', async interaction => {
